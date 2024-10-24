@@ -1,0 +1,23 @@
+/* Name: Jeovany Velazquez-Gonzalez Date: 10/23/24 */
+:root {
+    box-sizing: border-box;
+}
+
+*, 
+::before, 
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #709b90;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body * + * {
+    margin-top: 1.5em;
+}
+
+p {
+    color: #F1F1F1;
+}
