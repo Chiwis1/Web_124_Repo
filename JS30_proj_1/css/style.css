@@ -66,32 +66,32 @@ kbd {
 }
 
 #horse {
-    background-image: url(/assets/horse.jpg);
+    background-image: url(assets/horse.jpg);
     background-size: contain;
 }
   
 #rooster {
-    background-image: url(/assets/rooster.png);
+    background-image: url(assets/rooster.png);
     background-size: cover;
 }
   
 #bunny {
-    background-image: url(/assets/bunny.jpg);
+    background-image: url(assets/bunny.jpg);
     background-size: cover;
 }
 
 #cow {
-    background-image: url(/assets/cow.jpg);
+    background-image: url(assets/cow.jpg);
     background-size: cover;
 }
 
 #pig {
-    background-image: url(/assets/pig.jpeg);
+    background-image: url(assets/pig.jpeg);
     background-size: cover;
 }
 
 #sheep {
-    background-image: url(/assets/sheep.png);
+    background-image: url(assets/sheep.png);
     background-size: cover;
 }
 
