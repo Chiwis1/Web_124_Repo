@@ -98,6 +98,8 @@ kbd {
 .volume-control {
     margin: 20px;
     text-align: center;
+    font-size: 3.5rem;
+    color: #00ff6a;
 }
 
 #volume {
