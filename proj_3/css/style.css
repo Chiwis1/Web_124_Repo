@@ -1,0 +1,24 @@
+/* Name: Jeovany Velazquez-Gonzalez Date:11/6/24  */
+:root {
+    box-sizing: border-box;
+}
+
+*, 
+::before, 
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #709b90;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body * + * {
+    margin-top: 1.5em;
+}/* Reminder: This is the lobotomized owl */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
