@@ -1,0 +1,113 @@
+/* Name: Jeovany Velazquez-Gonzalez Date: 11/13/2024 */
+/* Adapted from https://javascript30.com/ */
+/* JavaScript Clock */
+/* New functions: cubic-bezier, transform-origin */
+/* New properties: transform-origin, TranslateY */
+
+html {
+    /* background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5); */
+    background-color: #709b90;
+    background-size: cover;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    padding: 2rem;
+    box-shadow:
+      0 0 0 4px rgba(0,0,0,0.1),
+      inset 0 0 0 3px #EFEFEF,
+      inset 0 0 10px black,
+      0 0 10px rgba(0,0,0,0.2);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hand {
+    width: 45%; /* Took 5 away to make hand shorter */
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 5%; /* This is where the 5% of the hand went to center the hands */
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.second-hand {
+    background-color: red;
+    height: 2px;
+}
+
+.min-hand {
+    height: 3.5px;
+}
+
+.number {
+    position: absolute;
+    font-size: 1.5rem;
+    color: black;
+    transform-origin: 50% 50%;
+    top: 48%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+.number.n12 { 
+    transform: rotate(0deg) translateY(-15rem); 
+}
+.number.n1  { 
+    transform: rotate(30deg) translateY(-15rem) rotate(-30deg); 
+}
+.number.n2  { 
+    transform: rotate(60deg) translateY(-15rem) rotate(-60deg); 
+}
+.number.n3  { 
+    transform: rotate(90deg) translateY(-15rem) rotate(-90deg); 
+}
+.number.n4  { 
+    transform: rotate(120deg) translateY(-15rem) rotate(-120deg);
+}
+.number.n5  { 
+    transform: rotate(150deg) translateY(-15rem) rotate(-150deg); 
+}
+.number.n6  { 
+    transform: rotate(180deg) translateY(-15rem) rotate(-180deg); 
+}
+.number.n7  { 
+    transform: rotate(210deg) translateY(-15rem) rotate(-210deg); 
+}
+.number.n8  { 
+    transform: rotate(240deg) translateY(-15rem) rotate(-240deg); 
+}
+.number.n9  { 
+    transform: rotate(270deg) translateY(-15rem) rotate(-270deg); 
+}
+.number.n10 { 
+    transform: rotate(300deg) translateY(-15rem) rotate(-300deg); 
+}
+.number.n11 { 
+    transform: rotate(330deg) translateY(-15rem) rotate(-330deg); 
+} 
+/* First rotate is for where on the cicle. The translate is for how far out. The second rotate is to have the numbers upright and not turned */
