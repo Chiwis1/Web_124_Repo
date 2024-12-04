@@ -31,7 +31,7 @@ function calculateSubtraction(userNumber) {
 
     while (i <= 10) {
         resultString += `<br> ${i} - ${userNumber} = ${i - userNumber} <br>`; // Used to format the String
-        i++; // add 1 to i untill it reaches 10 
+        i++; // add 1 to i until it reaches 10 
     }
 
     subtraction.innerHTML = resultString; // Allows the <br> to be added onto the html
@@ -61,7 +61,7 @@ function calculateDivision(userNumber) {
 
     do {
         resultString += `<br> ${i} / ${userNumber} = ${(i / userNumber).toFixed(2)} <br>`; // Used to format the String
-        i++; // add 1 to i untill it reaches 10 
+        i++; // add 1 to i until it reaches 10 
     } 
 
     while (i <= 10); // Executes the do code as long as i < 10
